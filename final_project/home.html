@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Design - Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Work+Sans:wght@300;400;500;600;700&display=swap'); </style>
+</head>
+<body class="home">
+    <header>
+        <nav>
+            <h3 class="logo"><a class="logo" href="home.html">Visual Design</a></h3>
+            <div class="buttons">
+                <a href="information.html"><button>Introduction</button></a>
+                <a href="thePrinciples.html"><button>The Principles</button></a>
+                <a href="introHTML.html"><button>Introduction to HTML</button></a>
+                <a href="introToCSS.html"><button>Introduction to CSS</button></a>
+                <a href="WWWpage.html"><button>World Wide Web</button></a>
+                <a href="teamBio.html"><button>The Team</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <section class="mainTitleContainer">
+            <h1 class="homeTitle">Welcome to our Website on Visual Design and UX</h1>
+            <h2 class="homeSubtitle">Click on any of the buttons to be redirected to its respective page!</h2>
+        </section>
+
+        <section class="clickableImgContainer1">
+            <img class="clickableImg" usemap="#navigation image1" src="img/title.png" alt="A clickable image that has the different logos of the different pages that it is linked to">
+            <map name="navigation image1">
+                <area alt="A logo of UX" href="information.html" coords="70,210,65" shape="circle">
+                <area alt="UX represented grpahically" href="thePrinciples.html" coords="197,142,65" shape="circle">
+                <area alt="Logo of HTML" href="introHTML.html" coords="315,52 303,60 290,70 283,80 275,96 273,114 275,132 283,151 297,165 311,172 328,178 335,178 336,146 384,160 390,154 397,142 402,122 403,101 394,80 383,66 367,54 352,49 335,48 325,49 " shape="polygon">
+                <area alt="Logo of CSS" href="introToCSS.html" coords="480,113,65" shape="circle">
+                <area alt="Logo of the World Wide Web" href="WWWpage.html" coords="620,143,65" shape="circle">
+                <area alt="Picture with 5 stick figures representing a team" href="teamBio.html" coords="748,210,65" shape="circle">
+            </map>
+        </section>
+
+        <section class="clickableImgContainer2">
+            <img class="clickableImg" usemap="#navigation image2" src="img/title.png" alt="A clickable image that has the different logos of the different pages that it is linked to">
+            <map name="navigation image2">
+                <area alt="A logo of UX" href="information.html" coords="55,168,53" shape="circle">
+                <area alt="UX represented grpahically" href="thePrinciples.html" coords="157,113,53" shape="circle">
+                <area alt="Logo of HTML" href="introHTML.html" coords="266,39 257,41 244,46 235,52 225,63 220,74 217,87 218,107 225,120 233,130 246,138 257,140 265,142 266,118 269,115 307,127 310,122 317,112 320,75 312,59 301,47 285,41 276,39 " shape="polygon">
+                <area alt="Logo of CSS" href="introToCSS.html" coords="382,90,53" shape="circle">
+                <area alt="Logo of the World Wide Web" href="WWWpage.html" coords="493,114,53" shape="circle">
+                <area alt="Picture with 5 stick figures representing a team" href="teamBio.html" coords="596,168,53" shape="circle">
+            </map>
+        </section>
+
+        <section class="clickableImgContainer3">
+            <img class="clickableImg" usemap="#navigation image3" src="img/title.png" alt="A clickable image that has the different logos of the different pages that it is linked to">
+            <map name="navigation image3">
+                <area alt="A logo of UX" href="information.html" coords="43,129,41" shape="circle">
+                <area alt="UX represented grpahically" href="thePrinciples.html" coords="121,87,41" shape="circle">
+                <area alt="Logo of HTML" href="introHTML.html" coords="193,31 185,36 178,42 171,49 168,59 167,69 168,78 173,89 180,99 188,106 198,109 204,110 204,91 208,87 236,98 242,91 245,81 247,70 245,61 240,48 233,38 224,33 218,31 211,29 203,30 " shape="polygon">
+                <area alt="Logo of CSS" href="introToCSS.html" coords="294,69,41" shape="circle">
+                <area alt="Logo of the World Wide Web" href="WWWpage.html" coords="379,87,41" shape="circle">
+                <area alt="Picture with 5 stick figures representing a team" href="teamBio.html" coords="458,129,41" shape="circle">
+            </map>
+        </section>
+
+        <section class="imgMobile1">
+            <img src="img/UX.png" usemap="#img1" alt="A logo of UX">
+            <map name="img1">
+                <area href="information.html" coords="96,97,87" shape="circle">
+            </map>
+        </section>
+
+        <section class="imgMobile2">
+            <img src="img/UXGrpahic.png" usemap="#img2" alt="UX represented grpahically">
+            <map name="img2">
+                <area href="thePrinciples.html" coords="96,97,87" shape="circle">
+            </map>
+        </section>
+
+        <section class="imgMobile3">
+            <img src="img/htmllogo.png" usemap="#img3" alt="Logo of HTML">
+            <map name="img3">
+                <area href="introHTML.html" coords="96,97,87" shape="circle">
+            </map>
+        </section>
+
+        <section class="imgMobile4">
+            <img src="img/css2.png" usemap="#img4" alt="Logo of CSS">
+            <map name="img4">
+                <area href="introToCSS.html" coords="96,97,87" shape="circle">
+            </map>
+        </section>
+
+        <section class="imgMobile5">
+            <img src="img/www.png" usemap="#img5" alt="Logo of the World Wide Web">
+            <map name="img5">
+                <area href="WWWpage.html" coords="96,97,87" shape="circle">
+            </map>
+        </section>
+
+        <section class="imgMobile6">
+            <img src="img/team.png" usemap="#img6" alt="Picture with 5 stick figures representing a team">
+            <map name="img6">
+                <area href="teamBio.html" coords="96,97,87" shape="circle">
+            </map>
+        </section>
+    </article>
+</body>
+</html>

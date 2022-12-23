@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Design - Intorduction to CSS</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Work+Sans:wght@300;400;500;600;700&display=swap'); </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h3 class="logo"><a class="logo" href="home.html">Visual Design</a></h3>
+            <div class="buttons">
+                <a href="information.html"><button>Introduction</button></a>
+                <a href="thePrinciples.html"><button>The Principles</button></a>
+                <a href="introHTML.html"><button>Introduction to HTML</button></a>
+                <a href="introToCSS.html"><button>Introduction to CSS</button></a>
+                <a href="WWWpage.html"><button>World Wide Web</button></a>
+                <a href="teamBio.html"><button>The Team</button></a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <article>
+        <h1>Introduction to CSS</h1>
+
+        <section>
+            <div class="centerimg">
+                <img src="img/css.png" alt="CSS Logo">
+            </div>
+
+            <h3>What is CSS?</h3>
+
+            <p>
+                CSS stands for Cascading Style Sheets. This is how we style the html in a webpage to make it look better rather 
+                than the basic white page with black text in Times New Roman and all of the elements being left alligned. 
+                This is usually made on a separate file so we don't mix up the CSS with other code, and it makes it easier to look through.
+            </p>
+
+            <div class="centerimg">
+                <img class="imgCSS" src="img/before_and_after_css.jpeg" alt="CSS Logo">
+            </div>
+        </section>
+
+        <section>
+            <h3>Types of CSS</h3>
+
+            <p>There are a 4 different types of CSS</p>
+
+            <ol>
+                <li>
+                    Inline Styles
+                    <ul>
+                        <li>It is configured in the body of the webpage</li>
+                        <li>It uses the &#60style&#62 attribute of the HTML tag it is in</li>
+                        <li>Only applies the style to the tag it is found in</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Embedded Styles
+                    <ul>
+                        <li>This is configures in the head of the HTML file</li>
+                        <li>It uses the HTML &#60style&#62 element</li>
+                        <li>This applies the style to the entire webpage</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Imported Styles
+                    <ul>
+                        <li>It is very similar to external style sheets</li>
+                        <li>We will look at this in future but will mainly focus on external</li>
+                    </ul>
+                </li>
+
+                <li>
+                    External Styles
+                    <ul>
+                        <li>This is configured in a separate file in ending with .css</li>
+                        <li>To then apply the styles to the main document we must use the HTML element &#60link&#62</li>
+                        <li>This is the only type of styling we will be using</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>What are its advantages?</h3>
+
+            <ul>
+                <li>It gives the user a greater control on page layout and typography</li>
+                <li>It separates the style and the structure of the webpage so the code is more organized</li>
+                <li>The styles can be stored in a file and linked to separate documents, but you can link it to many different documents</li>
+                <li>Because we store the styles on a separate page it's easier to do maintenence on the webpage later on</li>
+                <li>It reduces the size of our documents by not having all the styles inline with the html</li>
+            </ul>
+        </section>      
+    </article>
+
+    <footer>
+        <h5>All information is taken from Visual Design and User Experience Power point on Moodle. </h5>
+    </footer>
+</body>
+</html>

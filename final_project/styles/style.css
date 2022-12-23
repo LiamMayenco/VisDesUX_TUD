@@ -1,0 +1,424 @@
+/*
+The CSS has been done by Liam Mayenco Vela (X00204735)
+
+I (Liam) have done CSS previously in an online course so none of the 
+code has been taken from an online source, only from previous knowledge,
+proof can be provided.
+
+The only online tool that I have used has been https://imagemap.org/ to make the maps process faster
+*/
+
+/*Background colour of the webpage and font*/
+body {
+    margin: 0%;
+    background-color: #e9ecef;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*Styles the 'logo' of the page and removes the link's styling*/
+.logo {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    padding-block: 1em;
+    color: #80ffdb;
+}
+
+/*Styles Navbar by adding background colour and spaces out the logo and buttons
+plus adds a slight shadow on the bottom of the nav to give it a little touch*/
+nav {
+    background-color: #343a40;
+    border-bottom: black;
+    border-bottom-style: solid;
+    box-shadow: 0px 3px 10px gray;
+    border-width: 2.5px;
+    padding-left: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Aligns the buttons vertically so everything is on the same line and adds some 
+spacing from the right of the navbar*/
+.buttons {
+    align-self: center;
+    padding-right: 0.3em;
+}
+
+/*Removes the standard button styling, inherits background colour of nav,
+changes font and gives it colour and has transition to give it a little
+animation when it gets hovered over*/
+button {
+    border-style: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: inherit;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    color: #e9ecef;
+    transition: background-color 0.2s;
+}
+
+.mainTitleContainer {
+    border: none;
+}
+
+/*Styles the titles of the different pages*/
+h1 {
+    text-align: center;
+    padding: 1em;
+    width: fit-content;
+    margin: auto;
+}
+
+/*Styles h2*/
+h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    color: #495057;
+}
+
+/*Styles the subtitles of each page*/
+h3 {
+    padding: 0.5em;
+    width: fit-content;
+    border-radius: 0.5em;
+}    
+
+/*When buttons in the nav and the link in the footer of introToHTML.html 
+are hovered over they are given a background colour and reveals the area
+and border of the different elements, also makes the mouse a pointer.*/
+footer a:hover,
+button:hover {
+    background-color: #80ffdb;
+    cursor: pointer;
+    color: black;
+}
+
+/*Sets the size of the all the information on the pages and centers it*/
+article {
+    width: 70%;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 1em;
+}
+
+/*Centers the images and removes border of image in home.html page*/
+.centerimg{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+/*Sets a sepcific pixel size to the image in introToHTML.html so it
+stays the same size and doesn't scale down*/
+.html_img {
+    width: 400px;
+}
+
+/*Styles each sectioon, the spacing and adds a border at the bottom*/
+section {
+    padding-block: 1em;
+    border-bottom-style: solid;
+    border-width: 0.1em;
+    border-color: #6c757d;
+}
+
+/*Removes Bold and adds underline*/
+h4 {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/*Centres h5 elements*/
+h5 {
+    text-align: center;
+}
+
+/*Styles the subtitle which is a h3 in in the information.html under the h1*/
+.title {
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*Aligns any content to the center*/
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/*Styles the link at the bottom of the introHTML.html page*/
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+
+/*Makes the boxes in teamBio.html spaced out and makes a nice layout*/
+.bioBoxesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+}
+
+/*Styles the actual boxes and gives the layout of the boxes on the page
+calc() was used to give the layout. 
+35% + 35% = 70% (because I want 2 boxes per row)
+100% - 70% = 30% space remaining
+dividing by 6 gives me the even spacing I need for it to look how I want it
+to look.*/
+.bioBoxes {
+    width: 35%;
+    margin: calc(30%/6);
+    border-color: black;
+    border-style: solid;
+    border-width: 0.2em;
+    padding-inline: 0.7em;
+    height: fit-content;
+    padding-block: 0;
+}
+
+
+/*Styling of the h1 and h2 in home.html*/
+.homeTitle {
+    padding: 0;
+    margin-bottom: 0.5em;
+}
+
+.homeSubtitle {
+    font-size: xx-large;
+    width: 70%;
+    margin: auto;
+}
+
+/*The reason behind the different clickableImgContainer is to allow not only the image
+but the map to also be responsive in home.html. display: none; allows for me to hide
+the other two sizes of the image and only use the larger of the 3 on a standard desktop.*/
+.clickableImgContainer1 {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.clickableImgContainer2 {
+    display: none;
+}
+
+.clickableImgContainer3 {
+    display: none;
+}
+
+/*Here there are different ones but they are all hidden as they will be replacing the large
+image on smaller devices to increase usability of the UI*/
+.imgMobile1 {
+    display: none;
+    border: none;
+}
+
+.imgMobile2 {
+    display: none;
+    border: none;
+}
+
+.imgMobile3 {
+    display: none;
+    border: none;
+}
+
+.imgMobile4 {
+    display: none;
+    border: none;
+}
+
+.imgMobile5 {
+    display: none;
+    border: none;
+}
+
+.imgMobile6 {
+    display: none;
+    border: none;
+}
+
+/*On smaller sized desktop view it puts .logo ontop of buttons due to less space being 
+available on the navbar and styles it so it is aligned at the center and also aligns 
+the buttons on the navbar and makes the article a bit larger*/
+@media screen and (max-width: 1050px) {
+    nav,
+    .logo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        width: fit-content;
+        margin: auto;
+        padding-block: 0;
+        margin-block: 0;
+        font-size: 20px;
+        margin-top: 0.3em;
+        margin-bottom: 0.1em;
+    }
+
+    .buttons {
+        padding-bottom: 0.4em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.2em;
+    }
+
+    article {
+        width: 75%;
+    }
+}
+
+/*Makes the nav sticky only in  desktop view and makes titles larger, also sets
+a font size for the h1 in home.html*/
+@media screen and (min-width: 950px) {
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    .homeTitle {
+        font-size: 80px;
+    }
+}
+
+/*Makes the h1 and h2 in home.html smaller and makes the second image in introCSS.html smaller and responsive*/
+@media screen and (max-width: 950px) {
+    .homeTitle {
+        font-size: 50px;
+    }
+
+    .homeSubtitle {
+        font-size: large;
+    }
+
+    .imgCSS {
+        width: 90%;
+    }
+} 
+
+/*
+All pages:
+ - Puts the buttons in a column order to reduce clutter in navbar fo phone/tablet users
+
+intro.html:
+ - Sets a smaller image size for the image
+
+teamBio.html:
+ - puts the boxes into a column, sets a constant size for these boxes 
+so they don't scale down on smaller devices
+
+home.html:
+ - makes the image smaller 
+ - hides .clickableImgContainer1 
+ - shows .clickableImgContainer2 
+ - removes section border and centers the image*/
+@media screen and (max-width: 850px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .html_img {
+        width: 300px;
+    }
+
+    .bioBoxes {
+        width: 250px;
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    .homeTitle {
+        font-size: xx-large;
+    }
+
+    .clickableImg {
+        width: 650px;
+    }
+
+    .buttons {
+        padding-right: 0;
+    }
+
+    .clickableImgContainer1 {
+        display: none;
+    }
+
+    .clickableImgContainer2 {
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+}
+
+
+/*makes the image smaller in home.html, hides .clickableImgContainer2, shows 
+.clickableImgContainer3, removes section border and centers the image*/
+@media screen and (max-width: 720px) {
+    .clickableImg {
+        width: 500px;
+    }
+
+    .clickableImgContainer2 {
+        display: none;
+    }
+
+    .clickableImgContainer3 {
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+}
+
+/*Hides .clickable image in home.html and displays the 6 logos on the image separately to 
+increase usability on phone sized screens*/
+@media screen and (max-width: 521px) {
+    .clickableImgContainer3 {
+        display: none;
+    }
+
+    .imgMobile1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgMobile2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgMobile3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgMobile4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgMobile5 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgMobile6 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
