@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Design and User Experience</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav ul">
+            <li class="nav li"><a href="index.html" class="nav a">Visual Design and User Experience</a></li> <li class="navli"><a href="" class="nav a">Software Development</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Visual Design and User Experience</h1>
+    </header>
+
+    <article class="article1">
+        <header>
+            <h2>Separating Content</h2>
+            <h3>This is just a heading in the middle of the screen</h3>
+            <img src="img/all.png" alt="HTML, CSS and JS logos" class="centerImg">
+        </header>
+
+        <section class="col-third">
+            <h3>HTML - Structure</h3>
+
+            <img src="img/html.png" alt="HTML logo">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde porro nulla tenetur facere sit magni, eum, ex ipsum laborum eos ratione doloribus quibusdam placeat iste atque dignissimos distinctio cum.
+            </p>
+
+            <ul>
+                <li>Choose tags so their meaning (which you will find discussed in a good HTML reference) matches your content.</li>
+                <li>If the tags aren't specific enough, add a class or id to distinguish particular elements as semantically-different.</li>
+                <li>Choose class and id values to reflect meaning as well, not to describe an appearance.</li>
+                <li>If no existing tag matches the content you have, use a generic tag (&lt;div&gt; or &lt;span&gt;) with a meaningful class or id.</li>
+            </ul>
+        </section>
+
+        <section class="col-third">
+            <h3>CSS - Layout/style</h3>
+
+            <img src="img/css.png" alt="CSS logo">
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni beatae veritatis, perspiciatis exercitationem veniam reprehenderit. Eos ea eaque consequatur, quaerat aut enim facilis culpa officiis hic asperiores non assumenda dicta!
+            </p>
+
+            <ul>
+                <li>Use CSS to specify how you want pieces of content to look, in a separate .css file.</li>
+                <li>If you need to, go back and add markup (especially class or id attritubes) to your HTML as you're creating your CSS. Don't slip into saying things about appearance in your HTML when doing this.</li>
+                <li>Don't use the &lt;style&gt; tag or HTML style property, which mix style information back into your HTML. If your reference uses these, find a better reference.</li>
+            </ul>
+        </section>
+
+        <section class="col-third">
+            <h3>Javascript - Functionality</h3>
+
+            <img src="img/js.png" alt="JS logo">
+             
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis atque autem aperiam veniam expedita, mollitia beatae ad repudiandae voluptatum facilis aut officia optio, consequuntur possimus cupiditate perferendis iusto, maxime corporis?
+            </p>
+
+            <ul>
+                <li>JS on server side (Node.js): Absolutely beneficial. Makes your code modular and hence maintainable.</li>
+                <li>JS on client side (Browser): Again very beneficial to keep your code modular. But you must bundle the code into few files (or just one file) for production.</li>
+            </ul>
+        </section>
+    </article>
+
+    <article class="article2">
+        <section class="col-half">
+            <dl>
+                <dt>
+                    Student Name
+                    <dd>Liam Mayenco Vela</dd>
+                </dt>
+                
+            </dl>
+        </section>
+
+        <section class="col-half">
+            <dl>
+                <dt>
+                    Student Number
+                    <dd>X00204735</dd>
+                </dt>
+            </dl>
+        </section>
+    </article>
+</body>
+</html>
